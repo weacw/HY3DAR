@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unity3d.player"
+	android:installLocation="preferExternal"
+	android:theme="@android:style/Theme.NoTitleBar"
+    android:versionCode="1"
+    android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22" />
+  <uses-feature android:name="android.hardware.camera" />
+  <supports-screens
+      android:smallScreens="true"
+      android:normalScreens="true"
+      android:largeScreens="true"
+      android:xlargeScreens="true"
+      android:anyDensity="true"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-feature android:name="android.hardware.camera" android:required="false"  />
+  <uses-feature android:name="android.hardware.camera.autofocus"  android:required="false" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK" />   
+  <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+  <application
+      android:icon="@drawable/app_icon"
+      android:label="@string/app_name"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+      android:debuggable="false">
+    
+    <activity android:name="com.weacw.androidplugins.WeacwMainAct"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar"
+     android:windowSoftInputMode="stateHidden|adjustResize" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+    </activity>
+    <activity android:name="com.unity3d.player.VideoPlayer"
+              android:label="@string/app_name"
+              android:screenOrientation="portrait"
+              android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">
+    </activity>
+
+    <activity
+        android:name="com.mob.tools.MobUIShell"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateHidden|adjustResize" >
+
+      <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+      <intent-filter android:priority="1000" >
+        <data android:scheme="tencent100371282" />
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+      </intent-filter>
+      <!-- 新浪回调 -->
+      <intent-filter>
+        <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <!-- 微信分享回调 -->
+    <activity
+        android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true" />
+    <!-- 易信分享回调 -->
+    <activity
+        android:name="cn.sharesdk.demo.yxapi.YXEntryActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:excludeFromRecents="true"
+        android:exported="true"
+        android:launchMode="singleTop" />
+    <!-- 支付宝分享回调 -->
+    <activity
+        android:name="cn.sharesdk.demo.apshare.ShareEntryActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true"/>
+
+    <!--
+            To support devices using the TI S3D library for stereo mode we must 
+            add the following library.
+            Devices that require this are: ODG X6 
+        -->
+    <uses-library android:name="com.ti.s3d" android:required="false" />
+    <!--
+            To support the ODG R7 in stereo mode we must add the following library.
+        -->
+    <uses-library android:name="com.osterhoutgroup.api.ext" android:required="false" />
+
+
+    <activity
+         android:name="com.everyplay.Everyplay.view.EveryplaySocialActivity"
+           android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+           android:theme="@android:style/Theme.NoTitleBar"
+           android:windowSoftInputMode="adjustResize"
+           android:screenOrientation="sensor"
+           android:hardwareAccelerated="true" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.EveryplayTextInputActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:screenOrientation="sensor"
+        android:hardwareAccelerated="false" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.videoplayer.EveryplayVideoPlayerActivity"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="adjustResize"
+        android:hardwareAccelerated="true" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.videoplayer.EveryplayVideoEditorActivity"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="sensor"
+        android:hardwareAccelerated="true" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.EveryplaySharingModalActivity"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@style/EveryplaySharingModal"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="sensor"
+        android:fitsSystemWindows="true"
+        android:hardwareAccelerated="true" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.browser.EveryplayBrowserActivity"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="sensor"
+        android:hardwareAccelerated="false" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.auth.EveryplayAuthActivity"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="sensor"
+        android:hardwareAccelerated="false"
+        android:windowSoftInputMode="adjustResize" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.view.auth.EveryplayAddConnectionActivity"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.Dialog"
+        android:hardwareAccelerated="false"
+        android:screenOrientation="sensor"
+        android:windowSoftInputMode="adjustResize" />
+
+    <activity
+      android:name="com.everyplay.Everyplay.communication.socialnetworks.EveryplayFacebook"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.Dialog"
+        android:hardwareAccelerated="false"
+        android:screenOrientation="sensor"
+        android:windowSoftInputMode="adjustResize" />
+
+
+    <service
+         android:name="com.everyplay.Everyplay.communication.upload.EveryplayUploadService" />
+  </application>
+</manifest>
+
+<!-- android:installLocation="preferExternal" -->

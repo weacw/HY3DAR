@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="08hy_qbs" size="0.320000 0.240059" />
+    <ImageTarget name="01hy_3dsm_girl" size="0.320000 0.320000" />
+    <ImageTarget name="06hy_zxx_sw_lh" size="0.320000 0.320000" />
+    <ImageTarget name="05hy_zxz_dl_dqy" size="0.320000 0.320000" />
+    <ImageTarget name="04hy_zgz_jx_zsmj" size="0.320000 0.320000" />
+    <ImageTarget name="03hy_zgz_dm_xm" size="0.320000 0.320000" />
+    <ImageTarget name="02hy_3dsm_sss" size="0.320000 0.320000" />
+    <ImageTarget name="00hy_logo" size="0.320000 0.293883" />
+  </Tracking>
+</QCARConfig>
