@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{FD131EBB-EA7D-6F61-F550-4B1F4DBB37FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-UnityScript-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_VIDEO;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;EVERYPLAY_IPHONE;VUFORIA_IOS_SETTINGS;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;ENABLE_DUCK_TYPING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\NativeExt.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\ShareSDK.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\AliPaySocial.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Copy.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\DingTalk.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\DouBan.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Dropbox.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Evernote.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Facebook.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\FacebookMessenger.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Flickr.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\GooglePlus.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Instagram.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Instapaper.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\KaKao.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\KaiXin.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Line.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\LinkedIn.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Mail.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\MingDao.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Pinterest.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Pocket.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Print.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\QQ.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\RenRen.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\SMS.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\SinaWeibo.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\TencentWeibo.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Tumblr.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\Twitter.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\VKontakte.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\WeChat.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\WhatsApp.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\YiXin.js" />
+     <Compile Include="Assets\Editor\SDKPorter\ShareSDK\Support\Required\ShareSDK.bundle\ScriptCore\platforms\YouDaoNote.js" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_strings.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_browser_button_share.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values\everyplay_strings.xml" />
+     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_handle.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_button_shape.xml" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_strings.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_facecam_timeline.xml" />
+     <None Include="Assets\EasyMovieTexture\Unlit_SphereInside.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_browser_button_refresh.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_facecam.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_editor_playback_control.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_topbar_closebutton.xml" />
+     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+     <None Include="Assets\Editor\SDKPorter\ShareSDK\Support\PlatformSDK\WeChatSDK\README.txt" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_trashcan_background_active.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_slimprogressbar.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_sidemenu_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_microphone_editor.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_control_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\AndroidManifest.xml" />
+     <None Include="Assets\Projcet\Artwork\Custom Shader\ShadowCatcher.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\proguard-project.txt" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_splashscreen.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\Plugins\iOS\VuforiaMediaSource\src\VideoPlayerHelper.mm.txt" />
+     <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+     <None Include="Assets\Projcet\Artwork\Models\HY3d\06hy_zxx_sw_lh\Transparent_RenderQueue_3100.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_progressbar.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_editor_buttons.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_trashcan_background.xml" />
+     <None Include="Assets\StreamingAssets\QCAR\ARKit.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_endscreen_install_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_endscreen_video.xml" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_platform_cell_back.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values-zh-rCN\everyplay_strings.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_theme_button_background.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_tracker_button_pressed.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values-ja\everyplay_strings.xml" />
+     <None Include="Assets\EasyMovieTexture\Chromakey.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_browser_button_back.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_topbar_background.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_editor_trimmer.xml" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_strings.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_theme_sidemenu_button.xml" />
+     <None Include="Assets\Plugins\Android\VuforiaMediaSource\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_progressbar_horizontal.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_browser_layout.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values\everyplay_styles.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_action_list.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_microphone_bg.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_button_background.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_action_list_option.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\build.xml" />
+     <None Include="Assets\EasyMovieTexture\readme.txt" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_color_drawables.xml" />
+     <None Include="Assets\Plugins\Android\VuforiaMediaSource\build.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_buttonbar_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_facecam_bg.xml" />
+     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_auth_layout.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_facecam_editor.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_timeline_stream_progress_track.xml" />
+     <None Include="Assets\StreamingAssets\QCAR\00hy_logo.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_sidemenu.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_timeline_tracker_button.xml" />
+     <None Include="Assets\Editor\SDKPorter\ShareSDK\Support\Optional\ShareSDKConfigFile.bundle\ShareContent.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_facecam_countdown.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_tracker_button.xml" />
+     <None Include="Assets\StreamingAssets\QCAR\StonesAndChips.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_background_track.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values\everyplay_attrs.xml" />
+     <None Include="Assets\Plugins\Android\VuforiaMediaSource\README.txt" />
+     <None Include="Assets\EasyMovieTexture\Chromakey2.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_header.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_theme_distinct_button_background.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_text_input_background.xml" />
+     <None Include="Assets\Demigiant\DemiLib\DemiLib.xml" />
+     <None Include="Assets\Projcet\Artwork\Models\HY3d\06hy_zxx_sw_lh\Transparents_NoLight.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_action_list_cancel.xml" />
+     <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_action_list_button.xml" />
+     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_instapaper_strings.xml" />
+     <None Include="Assets\Projcet\Artwork\Models\HY3d\06hy_zxx_sw_lh\Transparencies.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_text_input.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_handle_pressed.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_microphone.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_browser_button_forward.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_timeline_current_time_track.xml" />
+     <None Include="Assets\Plugins\iOS\VuforiaMediaSource\README.txt" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_social_topbar.xml" />
+     <None Include="Assets\Plugins\Android\ShareSDK\AndroidManifest.xml" />
+     <None Include="Assets\StreamingAssets\QCAR\Tarmac.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_timeline_tracker_button_pressed.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_button_bar.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_topbar_notification.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_error.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_social_layout.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_trashcan.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_sidemenu_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_current_time_track.xml" />
+     <None Include="Assets\Editor\SDKPorter\ShareSDK\Support\Optional\ShareSDKConfigFile.bundle\ShareSDK.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_oval_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_endscreen.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_header_install_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_button_blue.xml" />
+     <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
+     <None Include="Assets\Projcet\Artwork\Custom Shader\Mask.shader" />
+     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_button_green.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values\everyplay_themes.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_action_list_destructive.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_topbar_menubutton.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values\everyplay_colors.xml" />
+     <None Include="Assets\Editor\SDKPorter\ShareSDK\Support\PlatformSDK\WeChatSDK\read_me.txt" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_round_button.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_editor_vumeters.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_facecam_player.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_sidemenu_grouplabel.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_timeline.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_browser_bottombar.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_processing_bg.xml" />
+     <None Include="Assets\Plugins\Everyplay\Helpers\Shaders\EveryplayCrossfade.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\CANDD.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_theme_sidemenu_background.xml" />
+     <None Include="Assets\Plugins\iOS\VuforiaMediaSource\src\VideoPlayerWrapper.mm.txt" />
+     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+     <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_oks_strings.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_control_buttons.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\values-ko\everyplay_strings.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_editor_processing.xml" />
+     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+     <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_editor_microphone.xml" />
+     <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_levels.xml" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DemiLib/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiEditor">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DemiLib/Editor/DemiEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenProEditor">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zip">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Editor/WEACW/Plugins/Ionic.Zip.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Plugins/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions.Editor">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Vuforia/Editor/Scripts/Vuforia.UnityExtensions.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>/Users/NSWell/Desktop/Project/BusinessProject/HY3DARAPP/x01_business20170116_iOS/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{993B66F6-269E-E0CA-8718-08F61862C342}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{ED31606F-FADE-28F7-646E-71A3E6798BF2}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-Editor-firstpass.unityproj">
+      <Project>{48919004-5B08-BBB1-DEBE-EF0715067FC5}</Project>      <Name>Assembly-UnityScript-Editor-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
